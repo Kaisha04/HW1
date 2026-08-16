@@ -14,9 +14,5 @@ class Program
         }
     }
     
-    public static List<int> SquaresOfOddNumbers (int[] array)
-    {
-        var result = array.Where(x => x % 2 != 0).Select(x => x * x).ToList();
-        return result;
-    }
+    public static List<int> SquaresOfOddNumbers (int[] array) =>  array.Where(x => x % 2 != 0).Select(x => x * x).ToList();
 }
