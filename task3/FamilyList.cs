@@ -83,8 +83,5 @@ class FamilyList
         }
     }
 
-    public Person[] GetMembersByYear(int year)
-    {
-        return familyMembers.Where(m => m.Year == year).ToArray();
-    }
+    public Person[] GetMembersByYear(int year) => familyMembers.Where(m => m.Year == year).ToArray();
 }
